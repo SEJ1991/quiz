@@ -12,7 +12,7 @@ export default function StartButton() {
   const text = isLoading ? 'Loading' : 'Start Quiz';
   return (
     <button
-      className='p-2 bg-green-500 rounded-md text-lg text-white transition-all hover:-translate-y-0.5 disabled:opacity-30'
+      className='p-2 bg-cyan-700 rounded-md text-lg text-white transition-all hover:-translate-y-0.5 disabled:opacity-30'
       disabled={isLoading}
     >
       {text}
