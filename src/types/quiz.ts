@@ -8,7 +8,7 @@
  * @property {string} question 질문
  * @property {'multiple'} type 퀴즈 타입
  */
-export type Quiz = {
+export type QuizData = {
   category: string;
   correct_answer: string;
   difficulty: 'easy';
@@ -27,4 +27,14 @@ export type Context = {
   order: number;
   isCorrect: boolean;
   context: string;
+};
+
+/**
+ * 가공 후 실제 end user 에게 보여질 퀴즈 타입
+ * @property {string} question 질문
+ * @property {Context[]} contexts 보기 목록
+ */
+export type Quiz = {
+  question: string;
+  contexts: Context[];
 };
