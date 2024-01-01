@@ -4,6 +4,7 @@ import { useSetAtom } from 'jotai';
 
 import { getQuiz } from 'api/quiz';
 import { quizzesJotai } from 'atoms/quiz';
+import { refineQuizzes } from 'libs/quiz';
 
 /**
  * Quiz 문제 요청 커스텀 훅
@@ -17,7 +18,7 @@ export default function useFetchQuiz(): boolean {
   });
 
   useEffect(() => {
-    data && setQuizzes(data.results);
+    data && setQuizzes(refineQuizzes(data.results));
   }, [data]);
 
   return isLoading;
