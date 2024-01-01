@@ -16,3 +16,15 @@ export type Quiz = {
   question: string;
   type: 'multiple';
 };
+
+/**
+ * 퀴즈 보기와 답인지에 대한 여부
+ * @property {number} order 순서
+ * @property {boolean} isCorrect 정답 여부
+ * @property {string} context 보기
+ */
+export type Context = {
+  order: number;
+  isCorrect: boolean;
+  context: string;
+};
