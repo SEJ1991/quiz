@@ -37,7 +37,7 @@ export const refineQuizzes = (datas: QuizData[]): Quiz[] => {
 export const isCorrectParamForQuiz = (slug: string | undefined): boolean => {
   const index = Number(slug);
 
-  if (isNaN(index) || (index < 0 && 4 < index)) {
+  if (isNaN(index) || index < 0 || 4 < index) {
     return false;
   }
 

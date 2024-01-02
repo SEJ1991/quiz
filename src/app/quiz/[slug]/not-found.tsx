@@ -9,7 +9,7 @@ export default function NotFound() {
     <div>
       <h2>Not Found Question</h2>
       <p>Could not find Question</p>
-      <Link href='/quiz'>Return</Link>
+      <Link href='/'>Return</Link>
     </div>
   );
 }
