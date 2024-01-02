@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 import Header from 'components/common/header/Header';
 import Provider from 'components/common/Provider';
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Provider>
           <Header />
           {children}
+          <Analytics />
         </Provider>
       </body>
     </html>
