@@ -6,7 +6,7 @@ import { useAtomValue } from 'jotai';
 import { resultsJotai } from 'atoms/quiz';
 
 /**
- * 정답여부를 표기해주는 컴포넌트
+ * 정답여부 표기 텍스트 컴포넌트
  * @property {number} index index
  */
 export default function ResultText({ index }: Props) {
