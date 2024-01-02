@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify';
+
 /**
  * 배열의 순서를 무작위로 섞어주는 함수
  * @see https://ko.javascript.info/task/shuffle
@@ -12,4 +14,13 @@ export const shuffle = <T>(param: T[]): T[] => {
   }
 
   return array;
+};
+
+/**
+ * innerHTML을 좀 더 안전하게 해주는 함수
+ * @see https://record22.tistory.com/100
+ * @param param innerHTML
+ */
+export const protectInnerHTML = (param: string): string => {
+  return DOMPurify.sanitize(param);
 };

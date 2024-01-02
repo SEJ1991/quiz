@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function QuizPage() {
   return (
     <main className='w-full min-h-screen pt-12 flex flex-col justify-center items-center gap-y-5'>
-      <span>quiz page</span>
+      <p className='text-2xl font-bold'>Are you ready?</p>
       <GoButton />
     </main>
   );

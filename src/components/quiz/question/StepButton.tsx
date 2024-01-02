@@ -11,9 +11,9 @@ import useStep from 'hooks/quiz/question/useStep';
  * @property {'Prev' | 'Next'} text 문구
  */
 export default function StepButton({ index, text }: Props) {
-  const { moveStep } = useStep({ index, text });
+  const { disabled, moveStep } = useStep({ index, text });
 
-  return <ProcessButton text={text} onClick={moveStep} />;
+  return <ProcessButton text={text} onClick={moveStep} disabled={disabled} />;
 }
 
 interface Props {

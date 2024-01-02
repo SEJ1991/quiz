@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.cyan-button {
+  @apply border-cyan-700 text-cyan-700 hover:bg-cyan-700;
+}
+
+.green-button {
+  @apply border-green-700 text-green-700 hover:bg-green-700;
+}
+
+.red-button {
+  @apply border-red-700 text-red-700 hover:bg-red-700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +49,6 @@ svg {
 }
 button {
   background: none;
-  border: 0;
   cursor: pointer;
 }
 a {

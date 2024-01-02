@@ -13,7 +13,7 @@ export default function ProcessButton({ text, disabled = false, onClick }: Props
 
   return (
     <button
-      className='p-2 bg-cyan-700 rounded-md text-lg text-white transition-all hover:-translate-y-0.5 disabled:opacity-30'
+      className='px-4 py-2 bg-cyan-700 rounded-md text-lg text-white transition-all hover:-translate-y-0.5 disabled:opacity-30'
       disabled={disabled}
       onClick={handleOnClick}
     >

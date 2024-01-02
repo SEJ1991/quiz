@@ -38,3 +38,13 @@ export type Quiz = {
   question: string;
   contexts: Context[];
 };
+
+/**
+ * 퀴즈 결과 타입
+ * @property {number} order 선택한 보기 번호
+ * @property {boolean} isCorreact 정답 여부
+ */
+export type QuizResult = {
+  order: number;
+  isCorrect: boolean;
+};
