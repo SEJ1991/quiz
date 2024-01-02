@@ -9,7 +9,7 @@ import { resultsJotai } from 'atoms/quiz';
  * 정답여부를 표기해주는 컴포넌트
  * @property {number} index index
  */
-export default function Result({ index }: Props) {
+export default function ResultText({ index }: Props) {
   const { order, isCorrect } = useAtomValue(resultsJotai)[index];
   const result = order ? (isCorrect ? 'correct!' : 'incorrect') : '';
 

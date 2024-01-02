@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Context from './Context';
-import Result from './Result';
+import ResultText from './ResultText';
 import { protectInnerHTML } from 'libs/common';
 import { Quiz } from 'types/quiz';
 
@@ -21,7 +21,7 @@ export default function QuestionBody({ index, quiz }: Props) {
           <Context key={context.order} info={context} />
         ))}
       </ol>
-      <Result index={index} />
+      <ResultText index={index} />
     </div>
   );
 }
