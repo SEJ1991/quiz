@@ -1,6 +1,7 @@
-import { resultsJotai } from 'atoms/quiz';
 import { useAtomValue } from 'jotai';
 import { useRouter } from 'next/navigation';
+
+import { resultsJotai } from 'atoms/quiz';
 
 /**
  * 문제 하단 버튼 로직 커스텀 훅
