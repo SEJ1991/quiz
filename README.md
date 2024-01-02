@@ -11,7 +11,7 @@
 <br/>
 <h2>Skills & Libraries</h2>
 <ul>
-  <li>TypeScript
+  <li>TypeScript
   </li>
   <li>
     React
@@ -22,6 +22,3 @@
   </li>
   <li>Tailwind</li>
 </ul>
-
-
-
