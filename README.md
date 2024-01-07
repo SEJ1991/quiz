@@ -1,4 +1,4 @@
-<h2>Project overview - <strong><a href="https://quiz-nine-gules.vercel.app" target="_blank">WEB</a></strong></h2>
+<h2>Project overview - 링크: <strong><a href="https://quiz-nine-gules.vercel.app" target="_blank">Quiz</a></strong></h2>
 <p>Random Quiz 웹사이트입니다.</p>
 <br/>
 <h2>Notice</h2>
